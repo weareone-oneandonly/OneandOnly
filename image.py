@@ -7,7 +7,6 @@ from PIL import Image
 import requests
 from io import BytesIO
 import base64
-import random
 
 app = Flask(__name__)
 
