@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bento Cake Design Generator</title>
+</head>
+<body>
+    <h1>도시락 케이크 디자인 선택!</h1>
+    <form action="/generate" method="post">
+        <label for="theme">Theme:</label><br>
+        <input type="text" id="theme" name="theme"><br><br>
+
+        <label for="color">Color:</label><br>
+        <input type="text" id="color" name="color"><br><br>
+
+        <label for="character">Character:</label><br>
+        <input type="text" id="character" name="character"><br><br>
+
+        <label for="position">Position:</label><br>
+        <input type="text" id="position" name="position"><br><br>
+
+        <label for="shape">Shape:</label><br>
+        <input type="text" id="shape" name="shape"><br><br>
+
+        <label for="size">Size: </label><br>
+        <select id="size" name="size">
+            <option value="10cm">미니 사이즈</option>
+            <option value="12cm">도시락 케이크</option>
+          </select><br><br>
+
+        <input type="submit" value="Generate">
+    </form> 
+
+    <h2>이런 케이크를 만들고 싶어요</h2>
+    <form action="/modify" method="post">
+        <label for="image_url">Image URL: </label><br>
+        <input type="text" id="image_url" name="image_url"><br><br>
+
+        <label for="color">Color:</label><br>
+        <input type="text" id="color" name="color"><br><br>
+
+        <label for="size">Size: </label><br>
+        <select id="size" name="size">
+            <option value="10cm">미니 사이즈</option>
+            <option value="12cm">도시락 케이크</option>
+          </select><br><br>
+
+        <input type="submit" value="Modify">
+
+    </form>
+
+</body>
+</html>
